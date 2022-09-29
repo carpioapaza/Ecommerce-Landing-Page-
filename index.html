@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="container">
+    <nav class="navbar">
+
+      <ul class="navbar__logo">
+        <li class="menu__item">
+          <img class="menu__hamburger" src="images/icon-menu.svg" alt="menu">
+        </li>
+        <li class="logo__item">
+          <img class="logo" src="images/logo.svg" alt="logo sneakers">
+        </li>
+      </ul>
+
+      <ul class="navbar__menu">
+        <img class="menu__close" src="images/icon-close.svg" alt="menu">
+        <li class="menu__items"><a href="#" class="menu__a">Collections</a></li>
+        <li class="menu__items"><a href="#" class="menu__a">Men</a></li>
+        <li class="menu__items"><a href="#" class="menu__a">Women</a></li>
+        <li class="menu__items"><a href="#" class="menu__a">About</a></li>
+        <li class="menu__items"><a href="#" class="menu__a">Contact</a></li>
+      </ul>
+
+
+
+      <ul class="navbar__cart-profile">
+        <!-- <li class="navbar__dark-mode">
+          <span class="icon-light material-symbols-outlined">
+            light_mode
+            </span>
+        </li> -->
+        <li class="cart__item">
+          <img class="cart__icon" src="images/icon-cart.svg" alt="cart">
+          <p class="cart__notification "></p>
+        </li>
+        <li class="profile__items">
+          <img class="profile__icon" src="images/image-avatar.png" alt="avatar">
+        </li>
+        <!-- MODAL CART -->
+        <li class="cart__modal">
+          <div class="cart__header">
+            <h2 class="cart__title">Cart</h2>
+          </div>
+
+          <div class="cart__body">
+            <div class="cart__body__info">
+              <img class="gallery__thumbnail__cart" src="images/image-product-1-thumbnail.jpg" alt="resume img">
+              <div class="cart__body__texts">
+                <h2 class="info__title info__title--checkout">Fall Limited Edition Sneakers</h2>
+                <div class="cart__body__texts__final-price">
+                  <p class="price__now price__now--checkout">125.00</p>
+                  <p class="input__number input__number--checkout"></p>
+                  <p class="price__total"></p>
+                </div>
+              </div>
+              <img class="cart__trash" src="images/icon-delete.svg" alt="delete">
+            </div>
+            <button class="sneakers__cta sneakers__cta--checkout ">Checkout</button>
+          </div>
+        </li>
+
+
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="product">
+
+
+
+      <div class="product__gallery">
+        <div class="product__gallery__big">
+          <img class="gallery__big gallery__big__box" src="images/image-product-1.jpg" alt="product 1">
+
+          <div class="gallery__change">
+            <img class="gallery__prev" src="images/icon-previous.svg" alt="prev">
+            <img class="gallery__next" src="images/icon-next.svg" alt="next">
+          </div>
+
+        </div>
+
+        <div class="product__gallery__thumbnails">
+          <img class="gallery__thumbnail" src="images/image-product-1-thumbnail.jpg" alt="thumbnail1">
+          <img class="gallery__thumbnail" src="images/image-product-2-thumbnail.jpg" alt="thumbnail2">
+          <img class="gallery__thumbnail" src="images/image-product-3-thumbnail.jpg" alt="thumbnail3">
+          <img class="gallery__thumbnail" src="images/image-product-4-thumbnail.jpg" alt="thumbnail4">
+        </div>
+
+      </div>
+
+      <!-- GALLERY MODAL -->
+      <div class="product__gallery-modal">
+        <div class="product__gallery">
+          <!-- <img class="product__gallery-close" src="images/icon-close.svg" alt="close"> -->
+
+          <svg class="product__gallery-close" width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+              fill="#69707D" fill-rule="evenodd" />
+          </svg>
+
+          <div class="product__gallery__big">
+            <img class="gallery__big" src="images/image-product-1.jpg" alt="product 1">
+
+            <div class="gallery__change">
+              <img class="gallery__prev" src="images/icon-previous.svg" alt="prev">
+              <img class="gallery__next" src="images/icon-next.svg" alt="next">
+            </div>
+
+          </div>
+
+          <div class="product__gallery__thumbnails">
+            <img class="gallery__thumbnail" src="images/image-product-1-thumbnail.jpg" alt="">
+            <img class="gallery__thumbnail" src="images/image-product-2-thumbnail.jpg" alt="">
+            <img class="gallery__thumbnail" src="images/image-product-3-thumbnail.jpg" alt="">
+            <img class="gallery__thumbnail" src="images/image-product-4-thumbnail.jpg" alt="">
+          </div>
+
+        </div>
+
+      </div>
+      <!-- GALLERY MODAL -->
+
+      <article class="product__info">
+        <h2 class="info__subtitle">SNEAKER COPANY</h2>
+        <h1 class="info__title">Fall Limited Edition Sneakers</h1>
+        <p class="info__paragraph">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+        <div class="info__prices">
+          <p class="price__now">125.00 <span class="price__now--discount">50%</span></p>
+          <p class="price__before">S/ 250.00</p>
+        </div>
+
+        <div class="info__product-quantity">
+          <div class="input">
+            <div class="input__minus">-</div>
+            <input class="input__number" type="number" value="0">
+            <div class="input__plus">+</div>
+
+          </div>
+          <button class="sneakers__cta sneakers__cta--add-cart"> <img class="cta__icon" src="images/icon-cart-white.svg"
+              alt="cart"> Add to cart</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+
+  <!--   
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <!-- <script src="https://kit.fontawesome.com/949f04e4a9.js" crossorigin="anonymous"></script> -->
+  <script src="main.js"></script>
+</body>
+
+</html>
